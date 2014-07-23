@@ -1,5 +1,15 @@
-## This program creates a special data structures for square invertable matrices
-## so that the inverse of a matrix can be cache to speed up its retreival
+# --------------------------------------------------------------------------------------------
+#
+#   File: cachematrix.R
+#   By: Fredrick Stakem
+#   Date: 7.23.14
+#
+#   Purpose: This program creates special matrix data structures for square invertable 
+#            matrices so that the inverse of a matrix can be cache to speed up its 
+#            retreival.
+#
+# --------------------------------------------------------------------------------------------
+
 
 ## This function stores a matrix and its inverse
 makeCacheMatrix <- function(x = matrix()) 
@@ -31,7 +41,6 @@ makeCacheMatrix <- function(x = matrix())
     list(get_data=get_data, set_data=set_data,
          get_inverse=get_inverse, set_inverse=set_inverse)
 }
-
 
 ## This function retreives the inverse of a matrix either from its cache or it calculates it and stores it in the object
 cacheSolve <- function(x, ...) 
