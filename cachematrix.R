@@ -2,7 +2,6 @@
 ## so that the inverse of a matrix can be cache to speed up its retreival
 
 ## This function stores a matrix and its inverse
-
 makeCacheMatrix <- function(x = matrix()) 
 {
     data <- x
@@ -35,7 +34,6 @@ makeCacheMatrix <- function(x = matrix())
 
 
 ## This function retreives the inverse of a matrix either from its cache or it calculates it and stores it in the object
-
 cacheSolve <- function(x, ...) 
 {
     inverse <- x$get_inverse()
